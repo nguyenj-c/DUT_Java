@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="80.0" prefWidth="250.0" style="-fx-background-color:gold;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univ_amu.iut.exercice1.CounterController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label fx:id="counterLabel" style="-fx-background-color: silver">
+                <font>
+                    <Font size="20" />
+                </font>
+            </Label>
+            <Button fx:id="incrementButton" onAction="#increment" style="-fx-background-color: green;" text="Click to increment" textFill="#9f0080" />
+            <Button fx:id="decrementButton" onAction="#decrement" style="-fx-background-color: yellow;" text="Click to decrement" textFill="#00e5ff" />
+        </VBox>
+    </center>
+</BorderPane>

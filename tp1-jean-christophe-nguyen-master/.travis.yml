@@ -1,0 +1,13 @@
+dist: xenial
+
+language: java
+
+jdk:
+ - openjdk11
+
+script:
+- java -version
+- mvn test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

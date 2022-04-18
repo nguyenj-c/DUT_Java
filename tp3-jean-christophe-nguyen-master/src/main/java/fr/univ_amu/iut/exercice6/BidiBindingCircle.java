@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice6;
+package java.fr.univ_amu.iut.exercice6;
 
 
 import javafx.application.Application;

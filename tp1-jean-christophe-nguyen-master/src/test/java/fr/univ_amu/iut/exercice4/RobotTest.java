@@ -1,12 +1,12 @@
-package fr.univ_amu.iut.exercice4;
+package java.fr.univ_amu.iut.exercice4;
 
-import static fr.univ_amu.iut.exercice4.Movement.*;
-
+import java.fr.univ_amu.iut.exercice4.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static java.fr.univ_amu.iut.exercice4.Movement.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

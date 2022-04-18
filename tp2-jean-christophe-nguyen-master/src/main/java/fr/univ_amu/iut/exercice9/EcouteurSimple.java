@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice9;
+package java.fr.univ_amu.iut.exercice9;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;

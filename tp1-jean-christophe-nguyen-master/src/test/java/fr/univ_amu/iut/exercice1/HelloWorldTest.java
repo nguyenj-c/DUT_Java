@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice1;
+package java.fr.univ_amu.iut.exercice1;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

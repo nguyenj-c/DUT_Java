@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice3;
+package java.fr.univ_amu.iut.exercice3;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice1;
+package java.fr.univ_amu.iut.exercice1;
 public class HelloWorld {
     public static String hello(java.lang.String chaine) {
             chaine="Bob";

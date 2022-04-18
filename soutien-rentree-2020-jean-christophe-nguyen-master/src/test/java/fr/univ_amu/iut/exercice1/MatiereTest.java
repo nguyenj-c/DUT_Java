@@ -1,9 +1,8 @@
-package fr.univ_amu.iut.exercice1;
+package java.fr.univ_amu.iut.exercice1;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Disabled;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MatiereTest {

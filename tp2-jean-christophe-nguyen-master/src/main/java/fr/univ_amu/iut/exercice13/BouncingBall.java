@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice13;
+package java.fr.univ_amu.iut.exercice13;
 
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;

@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.utilitaires;
+package java.fr.univ_amu.iut.utilitaires;
 
 import java.util.Objects;
 

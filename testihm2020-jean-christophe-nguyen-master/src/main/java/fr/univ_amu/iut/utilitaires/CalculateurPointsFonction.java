@@ -1,7 +1,6 @@
-package fr.univ_amu.iut.utilitaires;
+package java.fr.univ_amu.iut.utilitaires;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class CalculateurPointsFonction {
 
@@ -50,8 +49,8 @@ public class CalculateurPointsFonction {
   public static void main() {
     Analyseur analyse=new Analyseur("exp(-x * 0.2) * sin(x)");
     System.out.println(analyse);
-    Expression f;
-    CalculateurPointsFonction(f,5,20);
+    Expression f = null;
+    new CalculateurPointsFonction(f,5,20);
     TestExpression.main();
 
 

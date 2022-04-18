@@ -1,9 +1,6 @@
-package fr.univ_amu.iut.ihm;
+package java.fr.univ_amu.iut.ihm;
 
-import fr.univ_amu.iut.utilitaires.Analyseur;
-import fr.univ_amu.iut.utilitaires.CalculateurPointsFonction;
-import fr.univ_amu.iut.utilitaires.ErreurDeSyntaxe;
-import fr.univ_amu.iut.utilitaires.Expression;
+import java.fr.univ_amu.iut.utilitaires.*;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.TilePane;

@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.exercice11;
+package java.fr.univ_amu.iut.exercice11;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;

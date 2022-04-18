@@ -1,4 +1,4 @@
-package fr.univ_amu.iut.utilitaires;
+package java.fr.univ_amu.iut.utilitaires;
 
 import java.io.IOException;
 import java.io.StreamTokenizer;

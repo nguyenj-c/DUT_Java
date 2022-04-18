@@ -1,11 +1,11 @@
-package fr.univ_amu.iut.exercice6;
+package java.fr.univ_amu.iut.exercice6;
 
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static fr.univ_amu.iut.exercice6.ArgsException.ErrorCode.*;
-import static org.junit.Assert.assertEquals;
+import static java.fr.univ_amu.iut.exercice6.ArgsException.ErrorCode.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Disabled
 public class ArgsExceptionTest {

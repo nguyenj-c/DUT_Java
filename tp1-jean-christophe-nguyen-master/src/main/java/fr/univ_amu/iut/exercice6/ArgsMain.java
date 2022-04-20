@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice6;
+package fr.univ_amu.iut.exercice6;
 
 public class ArgsMain {
     public static void main(String[] args) {

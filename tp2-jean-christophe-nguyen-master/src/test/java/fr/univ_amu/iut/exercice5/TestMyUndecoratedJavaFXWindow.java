@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice5;
+package fr.univ_amu.iut.exercice5;
 
 import javafx.application.Platform;
 import javafx.scene.input.KeyCode;

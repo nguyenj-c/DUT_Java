@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice7;
+package fr.univ_amu.iut.exercice7;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;

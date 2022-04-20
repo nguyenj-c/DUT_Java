@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice1;
+package fr.univ_amu.iut.exercice1;
 
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;

@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice4;
+package fr.univ_amu.iut.exercice4;
 
 public enum Movement {
     LEFT('L'),
@@ -6,7 +6,7 @@ public enum Movement {
     ADVANCE('A'),
     NONE(' ');
 
-    char instruction;
+    final char instruction;
 
     Movement(char instruction) {
         this.instruction = instruction;

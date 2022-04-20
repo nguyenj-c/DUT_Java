@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice2.utilitaires;
+package fr.univ_amu.iut.exercice2.utilitaires;
 
 public interface Expression {
     double valeur(double x);

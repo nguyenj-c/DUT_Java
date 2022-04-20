@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice1;
+package fr.univ_amu.iut.exercice1;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.*;

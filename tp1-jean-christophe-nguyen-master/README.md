@@ -327,8 +327,8 @@ Quand une classe de test possède plusieurs méthodes de test, on peut les exéc
 
 Si un test échoue, son résultat sera écrit en rouge avec le marqueur ![run test failed](src/main/resources/assets/idea_test_failed.png) et la marge du code de la méthode correspondante aura l'icône ![mark method test failed](src/main/resources/assets/idea_test_method_mark_failed.png). Un double clic sur le test vous ramènera sur son code.
 
-Certains tests peuvent être momentanément désactivés car leur méthode est préfixée de l'annotation `@Disabled`. Dans ce cas, le test est ignoré et apparaît avec la marque ![run test ignored](src/main/resources/assets/idea_test_ignored.png).
-Pour activer le test, il faut mettre en commentaire l'annotation `@Disabled` ou la supprimer.
+Certains tests peuvent être momentanément désactivés car leur méthode est préfixée de l'annotation `//@Disabled`. Dans ce cas, le test est ignoré et apparaît avec la marque ![run test ignored](src/main/resources/assets/idea_test_ignored.png).
+Pour activer le test, il faut mettre en commentaire l'annotation `//@Disabled` ou la supprimer.
 
 Enfin, quand il existe plusieurs classes de test regroupées comme ici dans l'arborescence `src/test/java`, il est possible de faire exécuter la totalité de tous les tests (non désactivés) en faisant un clic droit sur le dossier java ![run all tests start point](src/main/resources/assets/idea_run_all_tests.png) et en choisissant Run 'All Tests'...
 
@@ -336,7 +336,7 @@ Enfin, quand il existe plusieurs classes de test regroupées comme ici dans l'ar
 
 Au cours du TP, vous devrez donc opérer en TDD. Chaque exercice sera accompagné d'au moins une classe de test, dont tous les tests sont initialement désactivés. Pour réaliser l'exercice vous devrez suivre cycliquement les étapes suivantes (indiquées dans la figure précédente, illustrant le TDD) : 
 
-1. **RED :** Dans cette étape, vous devez activer un test en enlevant le `@Disabled` devant la méthode de test (ou en la décommentant). Une fois 
+1. **RED :** Dans cette étape, vous devez activer un test en enlevant le `//@Disabled` devant la méthode de test (ou en la décommentant). Une fois 
 le test activé, vous devez le lancer pour vérifier qu'il échoue. Un test qui n'échoue jamais (comme celui de `AppTest`) ne teste rien donc il ne 
 sert à rien.
 

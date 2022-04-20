@@ -1,6 +1,6 @@
-package java.fr.univ_amu.iut.ihm;
+package fr.univ_amu.iut.ihm;
 
-import java.fr.univ_amu.iut.utilitaires.*;
+import fr.univ_amu.iut.utilitaires.*;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.TilePane;
@@ -48,7 +48,7 @@ public class TraceurDeFonction {
     axe.setHgap(1/4);
     axe.setVgap(1/2);
     root.getChildren().addAll(axeX,axeY);
-    CalculateurPointsFonction;
+    //CalculateurPointsFonction;
     }
   private void setIds() {
 

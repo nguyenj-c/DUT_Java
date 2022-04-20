@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice13;
+package fr.univ_amu.iut.exercice13;
 
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Disabled;

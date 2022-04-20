@@ -1,21 +1,21 @@
-package java.fr.univ_amu.iut.exercice6;
+package fr.univ_amu.iut.exercice6;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static java.fr.univ_amu.iut.exercice6.ArgsException.ErrorCode.*;
+import static fr.univ_amu.iut.exercice6.ArgsException.ErrorCode.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArgsTest {
 
-    @Disabled
+    //@Disabled
     @Test
     public void testCreateWithNoSchemaOrArguments() throws Exception {
         Args args = new Args("", new String[0]);
         assertEquals(0, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testWithNoSchemaButWithOneArgument() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -24,7 +24,7 @@ public class ArgsTest {
         assertEquals('x', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testWithNoSchemaButWithMultipleArguments() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -33,7 +33,7 @@ public class ArgsTest {
         assertEquals('x', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testNonLetterSchema() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -42,7 +42,7 @@ public class ArgsTest {
         assertEquals('*', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testInvalidArgumentFormat() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -51,7 +51,7 @@ public class ArgsTest {
         assertEquals('f', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testSimpleBooleanPresent() throws Exception {
         Args args = new Args("x", new String[]{"-x"});
@@ -59,7 +59,7 @@ public class ArgsTest {
         assertEquals(1, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testSimpleStringPresent() throws Exception {
         Args args = new Args("x*", new String[]{"-x", "param"});
@@ -68,7 +68,7 @@ public class ArgsTest {
         assertEquals(1, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testMissingStringArgument() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -77,7 +77,7 @@ public class ArgsTest {
         assertEquals('x', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testSpacesInFormat() throws Exception {
         Args args = new Args("x, y", new String[]{"-xy"});
@@ -86,7 +86,7 @@ public class ArgsTest {
         assertEquals(2, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testSimpleIntPresent() throws Exception {
         Args args = new Args("x#", new String[]{"-x", "42"});
@@ -95,7 +95,7 @@ public class ArgsTest {
         assertEquals(1, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testInvalidInteger() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -105,7 +105,7 @@ public class ArgsTest {
         assertEquals("Forty two", e.getErrorParameter());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testMissingInteger() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -114,7 +114,7 @@ public class ArgsTest {
         assertEquals('x', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testSimpleDoublePresent() throws Exception {
         Args args = new Args("x##", new String[]{"-x", "42.3"});
@@ -122,7 +122,7 @@ public class ArgsTest {
         assertEquals(42.3, args.getDouble('x'), .001);
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testInvalidDouble() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -132,7 +132,7 @@ public class ArgsTest {
         assertEquals("Forty two", e.getErrorParameter());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testMissingDouble() throws Exception {
         ArgsException e = assertThrows(ArgsException.class,
@@ -141,7 +141,7 @@ public class ArgsTest {
         assertEquals('x', e.getErrorArgumentId());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testExtraArguments() throws Exception {
         Args args = new Args("x,y*", new String[]{"-x", "-y", "alpha", "beta"});
@@ -150,7 +150,7 @@ public class ArgsTest {
         assertEquals(2, args.cardinality());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testExtraArgumentsThatLookLikeFlags() throws Exception {
         Args args = new Args("x,y*", new String[]{"-x", "alpha", "-y", "beta"});

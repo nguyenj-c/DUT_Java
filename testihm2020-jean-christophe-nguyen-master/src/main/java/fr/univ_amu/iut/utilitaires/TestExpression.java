@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.utilitaires;
+package fr.univ_amu.iut.utilitaires;
 
 public class TestExpression {
 

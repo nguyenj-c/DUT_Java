@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut;
+package fr.univ_amu.iut;
 
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;

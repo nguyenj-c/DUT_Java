@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice3_1;
+package fr.univ_amu.iut.exercice3_1;
 
 import org.junit.jupiter.api.*;
 

@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice3_2;
+package fr.univ_amu.iut.exercice3_2;
 
 
 import javafx.beans.binding.Bindings;

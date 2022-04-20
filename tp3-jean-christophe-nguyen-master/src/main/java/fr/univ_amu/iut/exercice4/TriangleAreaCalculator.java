@@ -1,6 +1,6 @@
-package java.fr.univ_amu.iut.exercice4;
+package fr.univ_amu.iut.exercice4;
 
-import java.fr.univ_amu.iut.exercice3.TriangleArea;
+import fr.univ_amu.iut.exercice3.TriangleArea;
 import javafx.application.Application;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.DoubleProperty;

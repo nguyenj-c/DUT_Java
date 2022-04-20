@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice11;
+package fr.univ_amu.iut.exercice11;
 
 import javafx.application.Platform;
 import javafx.scene.control.Button;

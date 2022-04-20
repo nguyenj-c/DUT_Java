@@ -1,4 +1,4 @@
-package java.fr.univ_amu.iut.exercice5;
+package fr.univ_amu.iut.exercice5;
 
 import java.util.List;
 

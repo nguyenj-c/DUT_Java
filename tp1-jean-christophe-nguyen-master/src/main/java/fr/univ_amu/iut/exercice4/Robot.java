@@ -6,8 +6,8 @@ public class Robot {
     private Orientation orientation;
 
     public Robot(GridPosition gridPosition, Orientation orientation) {
-        //while(true){
-        throw new RuntimeException("Not yet implemented !");
+        this.gridPosition = gridPosition;
+        this.orientation = orientation;
     }
 
     public GridPosition getGridPosition() {
@@ -19,15 +19,56 @@ public class Robot {
     }
 
     public void turnRight() {
-        throw new RuntimeException("Not yet implemented !");
+        switch(orientation) {
+            case NORTH:
+                orientation = Orientation.EAST;
+                break;
+            case EAST:
+                orientation = Orientation.SOUTH;
+                break;
+            case SOUTH:
+                orientation = Orientation.WEST;
+                break;
+            case WEST:
+                orientation = Orientation.NORTH;
+                break;
+        }
     }
 
     public void turnLeft() {
-        throw new RuntimeException("Not yet implemented !");
+        switch(orientation) {
+            case NORTH:
+                orientation = Orientation.WEST;
+                break;
+            case EAST:
+                orientation = Orientation.NORTH;
+                break;
+            case SOUTH:
+                orientation = Orientation.EAST;
+                break;
+            case WEST:
+                orientation = Orientation.SOUTH;
+                break;
+        }
     }
 
     public void advance() {
-        throw new RuntimeException("Not yet implemented !");
+        switch(orientation) {
+            case NORTH:
+                gridPosition.setY(gridPosition.getY() + 1);
+                break;
+            case SOUTH:
+                gridPosition.setY(gridPosition.getY() - 1);
+                break;
+            case EAST:
+                gridPosition.setX(gridPosition.getX() + 1);
+                break;
+            case WEST:
+                gridPosition.setX(gridPosition.getX() - 1);
+                break;
+
+            default: break;
+        }
     }
 }
 

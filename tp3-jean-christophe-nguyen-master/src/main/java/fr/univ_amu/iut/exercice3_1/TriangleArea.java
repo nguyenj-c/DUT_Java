@@ -66,8 +66,8 @@ public class TriangleArea {
     }
 
     void printResult() {
-        //StringExpression output = Bindings.format("For P1(" + x1.get() + "," + y1.get() + "), P2(" + x2.get() + "," + y2.get() + "), P3(" + x3.get() + "," + y3.get() + "),"+" the area of triangle ABC is %.1f", area.divide(2.0));
-        StringExpression output = Bindings.concat("For P1(" + x1.get() + "," + y1.get() + "), P2(" + x2.get() + "," + y2.get() + "), P3(" + x3.get() + "," + y3.get() + "),"+" the area of triangle ABC is ", area.divide(2.0));
+        StringExpression output = Bindings.format("For P1(" + x1.get() + "," + y1.get() + "), P2(" + x2.get() + "," + y2.get() + "), P3(" + x3.get() + "," + y3.get() + "),"+" the area of triangle ABC is %.1f", area.getValue());
+        //StringExpression output = Bindings.concat("For P1(" + x1.get() + "," + y1.get() + "), P2(" + x2.get() + "," + y2.get() + "), P3(" + x3.get() + "," + y3.get() + "),"+" the area of triangle ABC is ", area.getValue());
         //System.out.println("For P1(" + x1.get() + "," + y1.get() + "), P2(" + x2.get() + "," + y2.get() + "), P3(" + x3.get() + "," + y3.get() + ")," + output);
         System.out.println(output.getValue());
     }

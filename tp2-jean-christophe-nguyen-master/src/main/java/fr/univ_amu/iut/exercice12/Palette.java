@@ -34,15 +34,15 @@ public class Palette extends Application {
     private HBox bas=new HBox(5);
 
     EventHandler<ActionEvent> ecouteurbleu = event -> {
-        label.setText("Le bouton bleu a été cliqué "+ ++nbBleu+" fois");
+        label.setText("Le bouton bleu a ete clique "+ ++nbBleu+" fois");
         panneau.setStyle("-fx-background-color: blue");
     };
     EventHandler<ActionEvent> ecouteurvert = event -> {
-        label.setText("Le bouton vert a été cliqué "+ ++nbVert+" fois");
+        label.setText("Le bouton vert a ete clique "+ ++nbVert+" fois");
         panneau.setStyle("-fx-background-color: green");
     };
     EventHandler<ActionEvent> ecouteurrouge = event -> {
-        label.setText("Le bouton rouge a été cliqué "+ ++nbRouge+" fois");
+        label.setText("Le bouton rouge a ete clique "+ ++nbRouge+" fois");
         panneau.setStyle("-fx-background-color: red");
     };
 
@@ -58,8 +58,11 @@ public class Palette extends Application {
         bas.setAlignment(Pos.CENTER);
         haut.setAlignment(Pos.CENTER);
         vert.setVisible(true);
+        vert.setId("btnVert");
         bleu.setVisible(true);
+        bleu.setId("btnBleu");
         rouge.setVisible(true);
+        rouge.setId("btnRouge");
         bleu.setOnAction(ecouteurbleu);
         vert.setOnAction(ecouteurvert);
         rouge.setOnAction(ecouteurrouge);

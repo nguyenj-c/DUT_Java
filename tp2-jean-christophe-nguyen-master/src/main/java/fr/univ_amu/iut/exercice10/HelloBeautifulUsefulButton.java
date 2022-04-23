@@ -20,7 +20,7 @@ public class HelloBeautifulUsefulButton extends Application {
         public void handle(ActionEvent actionEvent) {
             Button btn = new Button();
             nbAction+=1;
-            System.out.println("Bouton actionné "+ nbAction +" fois");
+            System.out.println("Bouton actionne "+ nbAction +" fois");
         }
     };
     @Override

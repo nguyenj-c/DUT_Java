@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
 
 import static org.mockito.Mockito.verify;
 
-@Disabled
+//@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestApplicationLifeCycle {
 
@@ -45,26 +45,26 @@ public class TestApplicationLifeCycle {
         robot.release(new KeyCode[]{});
         robot.release(new MouseButton[]{});
     }
-    @Disabled
+    //@Disabled
     @Test
     public void constructor() throws Exception {
         verify(out).println("constructeur ApplicationLifeCycle()");
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void init() {
         verify(out).println("init()");
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void test_stop() throws Exception {
         FxToolkit.setupApplication(ApplicationLifeCycle.class).stop();
         verify(out).println("stop()");
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void test_life_cycle_output() {
         verify(out).println("constructeur ApplicationLifeCycle()");

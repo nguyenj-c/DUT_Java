@@ -3,14 +3,21 @@ package fr.univ_amu.iut.exercice6;
 import static fr.univ_amu.iut.exercice6.ArgsException.ErrorCode.INVALID_ARGUMENT_NAME;
 
 public class Args {
+
+    private String schema;
+    private String[] args ;
+
     public Args(String schema, String[] args) throws ArgsException {
         parseSchema(schema);
         parseArgumentStrings(args);
-        throw new RuntimeException("Not yet implemented !");
+        this.schema = schema;
+        this.args = args;
     }
 
     public boolean has(char arg) {
-        throw new RuntimeException("Not yet implemented !");
+        if(this.schema.contains(arg)) {
+
+        }
     }
 
     public int cardinality() {

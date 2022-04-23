@@ -6,7 +6,7 @@ import java.io.PrintStream;
 
 import static org.mockito.Mockito.*;
 
-@Disabled
+//@Disabled
 public class PropertyExampleContinuedTest {
     private PrintStream out;
     private PropertyExampleContinued propertyExample;

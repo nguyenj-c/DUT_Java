@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
-@Disabled
+//@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestHelloButton {
 

@@ -14,10 +14,11 @@ public class HelloLabel extends Application {
         primaryStage.setTitle("Hello !");
         primaryStage.setAlwaysOnTop(true);
         primaryStage.setResizable(false);
+        int width = 250;
         primaryStage.setHeight(100);
-        primaryStage.setWidth(250);
+        primaryStage.setWidth(width);
         BorderPane root = new BorderPane();
-        Scene scene = new Scene(root, 250, 100);
+        Scene scene = new Scene(root, width, 100);
         Label label = new Label();
         label.setText("Hello !");
         root.setCenter(label);

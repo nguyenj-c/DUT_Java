@@ -26,7 +26,7 @@ import static org.mockito.Mockito.verify;
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
-@Disabled
+//@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestHelloBeautifulUsefulButton {
 
@@ -99,7 +99,7 @@ public class TestHelloBeautifulUsefulButton {
         PrintStream out = mock(PrintStream.class);
         System.setOut(out);
         robot.clickOn("#buttonHello");
-        verify(out).println("Bouton actionné 1 fois");
+        verify(out).println("Bouton actionne 1 fois");
     }
 
 
@@ -116,7 +116,7 @@ public class TestHelloBeautifulUsefulButton {
         robot.clickOn("#buttonHello");
         robot.clickOn("#buttonHello");
         robot.clickOn("#buttonHello");
-        verify(out).println("Bouton actionné 3 fois");
+        verify(out).println("Bouton actionne 3 fois");
     }
 
 }

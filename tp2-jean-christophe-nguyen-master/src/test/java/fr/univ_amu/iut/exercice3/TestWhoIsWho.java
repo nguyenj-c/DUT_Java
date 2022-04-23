@@ -46,7 +46,7 @@ public class TestWhoIsWho {
         robot.release(new KeyCode[]{});
         robot.release(new MouseButton[]{});
     }
-    @Disabled
+    //@Disabled
     @Test
     public void test_life_cycle_output() {
         verify(out).println("[JavaFX Application Thread] constructeur WhoIsWho()");

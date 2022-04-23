@@ -26,7 +26,7 @@ import static org.mockito.Mockito.verify;
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
-@Disabled
+//@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestHelloBeautifulUsefulButton {
 
@@ -99,7 +99,7 @@ public class TestHelloBeautifulUsefulButton {
         PrintStream out = mock(PrintStream.class);
         System.setOut(out);
         robot.clickOn("#buttonHello");
-        verify(out).println("Bouton actionné");
+        verify(out).println("Bouton actionne");
     }
 
 

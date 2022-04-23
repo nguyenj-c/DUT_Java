@@ -9,21 +9,16 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.util.concurrent.Flow;
+
 public class HelloBeautifulUsefulButton extends Application {
     private int nbAction = 0;
-    int x=nbAction+1;
-    EventHandler<ActionEvent> ecouteur2 = event -> {
-        x += 1;
-        System.out.println("Bouton actionné " + x + " fois");
-    };
-    /*{
 
-        public void handle(ActionEvent actionEvent) {
-            Button btn = new Button();
-            nbAction+=1;
-            event -> System.out.println("Bouton actionné "+ nbAction +"fois"));
-        }
-    };*/
+    EventHandler<ActionEvent> ecouteur2 = event -> {
+        this.nbAction += 1;
+        System.out.println("Bouton actionne " + this.nbAction + " fois");
+    };
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Hello !");

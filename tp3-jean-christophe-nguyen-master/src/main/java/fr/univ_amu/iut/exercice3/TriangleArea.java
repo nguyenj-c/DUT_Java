@@ -144,8 +144,8 @@ public class TriangleArea {
     }
 
     private void createBinding() {
-        NumberBinding result = x1.multiply(y2).subtract(x1.multiply(y3)).add(x2.multiply(y3))
-                .subtract(x2.multiply(y1)).add(x3.multiply(y1)).subtract(x3.multiply(y2));
+        NumberBinding result = (this.x1.multiply(this.y2).subtract(this.x1.multiply(this.y3)).add(this.x2.multiply(y3))
+                .subtract(this.x2.multiply(this.y1)).add(this.x3.multiply(this.y1)).subtract(this.x3.multiply(this.y2))).divide(2.0);
         result = Bindings.when(result.lessThan(0)).then(result.negate()).otherwise(result);
         area.bind(result);
     }

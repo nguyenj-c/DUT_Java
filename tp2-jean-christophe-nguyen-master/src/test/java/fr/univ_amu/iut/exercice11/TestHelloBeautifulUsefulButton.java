@@ -99,7 +99,7 @@ public class TestHelloBeautifulUsefulButton {
         PrintStream out = mock(PrintStream.class);
         System.setOut(out);
         robot.clickOn("#buttonHello");
-        verify(out).println("Bouton actionné 1 fois");
+        verify(out).println("Bouton actionne 1 fois");
     }
 
 
@@ -116,7 +116,7 @@ public class TestHelloBeautifulUsefulButton {
         robot.clickOn("#buttonHello");
         robot.clickOn("#buttonHello");
         robot.clickOn("#buttonHello");
-        verify(out).println("Bouton actionné 3 fois");
+        verify(out).println("Bouton actionne 3 fois");
     }
 
 }

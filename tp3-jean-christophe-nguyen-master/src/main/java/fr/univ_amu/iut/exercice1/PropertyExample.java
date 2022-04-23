@@ -18,7 +18,7 @@ public class PropertyExample {
     public static void main(String[] args) {
         PropertyExample propertyExample = new PropertyExample();
         propertyExample.createProperty();
-        //propertyExample.addAndRemoveInvalidationListener();
+        propertyExample.addAndRemoveInvalidationListener();
         propertyExample.addAndRemoveChangeListener();
     }
 
@@ -26,9 +26,9 @@ public class PropertyExample {
 
         anIntProperty = new SimpleIntegerProperty(1024);
         System.out.println();
-        /*System.out.println("anIntProperty = "+anIntProperty);
+        System.out.println("anIntProperty = "+anIntProperty);
         System.out.println("anIntProperty.get() = "+anIntProperty.get());
-        System.out.println("anIntProperty.getValue() = "+anIntProperty.getValue());*/
+        System.out.println("anIntProperty.getValue() = "+anIntProperty.getValue());
         changeListener = (observableValue, oldValue, newValue) -> System.out.println("The observableValue has changed: oldValue = "+oldValue + ", newValue = " + newValue);
         invalidationListener = observable -> System.out.println("The observable has been invalidated.");
     }

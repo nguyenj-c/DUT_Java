@@ -18,7 +18,7 @@ import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
+//@Disabled
 @ExtendWith(ApplicationExtension.class)
 public class TestMySecondJavaFXWindow {
 
@@ -41,37 +41,37 @@ public class TestMySecondJavaFXWindow {
         robot.release(new MouseButton[]{});
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_with_correct_title() {
         assertEquals("Second Useless JavaFX Window", stage.getTitle());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_is_always_on_top() {
         assertTrue(stage.alwaysOnTopProperty().get());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_is_not_resizable() {
         assertFalse(stage.resizableProperty().get());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_with_height_of_400() {
         assertEquals(400, stage.getHeight());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_with_width_of_800() {
         assertEquals(800, stage.getWidth());
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void should_initialize_stage_is_showing() {
         assertTrue(stage.isShowing());

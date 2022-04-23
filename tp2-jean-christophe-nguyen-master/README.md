@@ -309,7 +309,7 @@ contraintes suivantes :
 
 - La classe `EcouteurSimple` doit implémenter l'interface `EventHandler<ActionEvent>`
 
-- La méthode `handle()` de cette classe se contente d'afficher le texte "Bouton actionné" sur la sortie standard.
+- La méthode `handle()` de cette classe se contente d'afficher le texte "Bouton actionne" sur la sortie standard.
 
 - La classe `HelloBeautifulUsefulButton` doit respecter les même contraintes que `HelloBeautifulButton`.
 
@@ -352,7 +352,7 @@ contraintes suivantes :
 
 - L'écouteur d'événement du bouton devra être une classe anonyme qui implémente `EventHandler<ActionEvent>`
 
-- La méthode `handle()` de cette classe affiche le texte "Bouton actionné x fois" sur la sortie standard. 
+- La méthode `handle()` de cette classe affiche le texte "Bouton actionne x fois" sur la sortie standard. 
 La valeur *x* doit correspondre au nombre de fois que le bouton a été actionné.
 
 - L'objet créé ainsi doit être enregistré comme écouteur du bouton
@@ -396,7 +396,7 @@ Une expression lambda comprend trois parties :
 Par exemple dans le cas de l'interface fonctionnelle `EventHandler<T>`, on pourrait écrire la lambda suivante pour faire 
 le même traitement que celui attendu à l'exercice 9 :
 ```java
-EventHandler<ActionEvent> ecouteur = event -> System.out.println("Bouton actionné");
+EventHandler<ActionEvent> ecouteur = event -> System.out.println("Bouton actionne");
 ```
 Cette expression lambda se décompose comme suit : 
 - `event` est le seul paramètre de l'expression. Il n'est donc pas nécessaire de l'encadrer de parenthèses. Il correspond 
@@ -404,7 +404,7 @@ au paramètre de la méthode de l'interface fonctionnelle associée. Dans notre 
 
 - l'opérateur `->` qui est l'élément syntaxique qui identifie une lambda
 
-- `System.out.println("Bouton actionné")` est le code qui sera exécuté lors de l'appel de la lambda. Dans cet exemple,
+- `System.out.println("Bouton actionne")` est le code qui sera exécuté lors de l'appel de la lambda. Dans cet exemple,
  c'est le code exécuté pour gérer un événement `ActionEvent`. Dans le cas où le corps comporte plusieurs instructions, il faut les
  encadrer d'accolades (bloc d'instructions).
 
@@ -491,7 +491,7 @@ Vous n'obtiendrez pas exactement le même rendu que l'image de la fenêtre du su
 
 #### Variante Exercice 12
 
-Dans cette variante, on vous demande de réaliser la même application (dans un fichier à part du même paquetage) mais de n'utiliser qu'un seul écouteur qui devra examiner la source de l'événement afin d'en déduire le bouton actionné.
+Dans cette variante, on vous demande de réaliser la même application (dans un fichier à part du même paquetage) mais de n'utiliser qu'un seul écouteur qui devra examiner la source de l'événement afin d'en déduire le Bouton actionne.
 
 
 #### Exercice 13 : Balle rebondissante
